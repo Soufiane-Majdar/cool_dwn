@@ -1,152 +1,219 @@
 #!/bin/sh
-#by:soufiane
-#github:https://github.com/Soufiane-Majdar
-while true
-do 
+#########################################################
+#  by:soufiane                                          #
+#  github:https://github.com/Soufiane-Majdar            #
+#                                                       #
+#                                                       #
+#   A shell script to automatically organize files      #
+#   in your Downloads repository ( for linux users)     #
+#                                                       #                           
+#########################################################
 
-for i in ~/Downloads/*
-do
+while true; do
 
-if [ -f $i ]
-then 
+	for i in ~/Downloads/*; do
 
-	case $i in 
-	~/Downloads/*.pdf )
-		mv $i ~/Documents ;;
-	~/Downloads/*.txt )
-		mv $i ~/Documents;;
-	~/Downloads/*.docx )
-		mv $i ~/Documents;;
-	~/Downloads/*.odt )
-		mv $i ~/Documents;;
-	~/Downloads/*.docx )
-		mv $i ~/Documents;;
-	~/Downloads/*.doc )
-		mv $i ~/Documents;;
-	~/Downloads/*.odc )
-		mv $i ~/Documents;;
-	~/Downloads/*.otc )
-		mv $i ~/Documents;;
-	~/Downloads/*.xlr )
-		mv $i ~/Documents;;
-	~/Downloads/*.xltx )
-		mv $i ~/Documents;;
-	~/Downloads/*.xlsx )
-		mv $i ~/Documents;;
-	~/Downloads/*.xlw )
-		mv $i ~/Documents;;
-	~/Downloads/*.ppsx )
-		mv $i ~/Documents;;
-	~/Downloads/*.ppsm )
-		mv $i ~/Documents;;
-	~/Downloads/*.pptx )
-		mv $i ~/Documents;;
-	~/Downloads/*.ppz )
-		mv $i ~/Documents ;;
-	~/Downloads/*.odp )
-		mv $i ~/Documents;;
-	~/Downloads/*.otp )
-		mv $i ~/Documents;;
-	~/Downloads/*.fodp )
-		mv $i ~/Documents;;
-	~/Downloads/*.ppsm )
-		mv $i ~/Documents;;
-	~/Downloads/*.pdf.xz )
-		mv $i ~/Documents;;
-	~/Downloads/*.pdf.gz )
-		mv $i ~/Documents;;
-	~/Downloads/*.cbt )
-		mv $i ~/Documents;;
-	~/Downloads/*.cb7 )
-		mv $i ~/Documents;;
-	~/Downloads/*.cbr )
-		mv $i ~/Documents;;
-	~/Downloads/*.eps )
-		mv $i ~/Documents;;
-	~/Downloads/*.oxt )
-		mv $i ~/Documents;;
-	~/Downloads/*.odf )
-		mv $i ~/Documents;;
-		
-	~/Downloads/*.img )
-		mv $i ~/Pictures;;
-	~/Downloads/*.png )
-		mv $i ~/Pictures;;
-	~/Downloads/*.jpg )
-		mv $i ~/Pictures;;  
-	~/Downloads/*.icns )
-		mv $i ~/Pictures;;
-	~/Downloads/*.svg )
-		mv $i ~/Pictures;;
-	~/Downloads/*.ico )
-		mv $i ~/Pictures;;
-	~/Downloads/*.gif )
-		mv $i ~/Pictures;;
-	~/Downloads/*.ppm )
-		mv $i ~/Pictures;;
-	~/Downloads/*.pgm )
-		mv $i ~/Pictures;;
-	~/Downloads/*.xpm )
-		mv $i ~/Pictures;;
-	~/Downloads/*.fits )
-		mv $i ~/Pictures;;
-	~/Downloads/*.jpeg )
-		mv $i ~/Pictures;;
-		
-	~/Downloads/*.m4a )
-		mv $i ~/Music;;
-	~/Downloads/*.xm )
-		mv $i ~/Music;;
-	~/Downloads/*.stm )
-		mv $i ~/Music;;
-	~/Downloads/*.s3m )
-		mv $i ~/Music;;
-	~/Downloads/*.mpga )
-		mv $i ~/Music;;
-	~/Downloads/*.m3u8 )
-		mv $i ~/Music;;
-	~/Downloads/*.ogg )
-		mv $i ~/Music;;
-	~/Downloads/*.flac )
-		mv $i ~/Music;;
-	~/Downloads/*.it )
-		mv $i ~/Music;;
-	~/Downloads/*.ult )
-		mv $i ~/Music;;
-	~/Downloads/*.it )
-		mv $i ~/Music;;
-	~/Downloads/*.ogx )
-		mv $i ~/Music;;
-		
-	~/Downloads/*.mjpeg )
-		mv $i ~/Videos;;
-	~/Downloads/*.nsv )
-		mv $i ~/Videos;;
-	~/Downloads/*.wmv )
-		mv $i ~/Videos;;
-	~/Downloads/*.ogm )
-		mv $i ~/Videos;;
-	~/Downloads/*.anime[1-9j] )
-		mv $i ~/Videos;;
-	~/Downloads/*.webm )
-		mv $i ~/Videos;;
-	~/Downloads/*.rvx )
-		mv $i ~/Videos;;
-	~/Downloads/*.m4u )
-		mv $i ~/Videos;;
-	~/Downloads/*.vivo )
-		mv $i ~/Videos;;
-	~/Downloads/*.m4v )
-		mv $i ~/Videos;;
-	~/Downloads/*.mp4 )
-		mv $i ~/Videos;;	
-		
+		if [ -f $i ]; then
 
-	*) 
-		
-	esac
-fi
+			case $i in
+			~/Downloads/*.pdf)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.txt)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.docx)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.odt)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.docx)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.doc)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.odc)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.otc)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.xlr)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.xltx)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.xlsx)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.xlw)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.ppsx)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.ppsm)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.pptx)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.ppz)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.odp)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.otp)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.fodp)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.ppsm)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.pdf.xz)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.pdf.gz)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.cbt)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.cb7)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.cbr)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.eps)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.oxt)
+				mv $i ~/Documents
+				;;
+			~/Downloads/*.odf)
+				mv $i ~/Documents
+				;;
+
+			~/Downloads/*.img)
+				mv $i ~/Pictures
+				;;
+			~/Downloads/*.png)
+				mv $i ~/Pictures
+				;;
+			~/Downloads/*.jpg)
+				mv $i ~/Pictures
+				;;
+			~/Downloads/*.icns)
+				mv $i ~/Pictures
+				;;
+			~/Downloads/*.svg)
+				mv $i ~/Pictures
+				;;
+			~/Downloads/*.ico)
+				mv $i ~/Pictures
+				;;
+			~/Downloads/*.gif)
+				mv $i ~/Pictures
+				;;
+			~/Downloads/*.ppm)
+				mv $i ~/Pictures
+				;;
+			~/Downloads/*.pgm)
+				mv $i ~/Pictures
+				;;
+			~/Downloads/*.xpm)
+				mv $i ~/Pictures
+				;;
+			~/Downloads/*.fits)
+				mv $i ~/Pictures
+				;;
+			~/Downloads/*.jpeg)
+				mv $i ~/Pictures
+				;;
+
+			~/Downloads/*.m4a)
+				mv $i ~/Music
+				;;
+			~/Downloads/*.xm)
+				mv $i ~/Music
+				;;
+			~/Downloads/*.stm)
+				mv $i ~/Music
+				;;
+			~/Downloads/*.s3m)
+				mv $i ~/Music
+				;;
+			~/Downloads/*.mpga)
+				mv $i ~/Music
+				;;
+			~/Downloads/*.m3u8)
+				mv $i ~/Music
+				;;
+			~/Downloads/*.ogg)
+				mv $i ~/Music
+				;;
+			~/Downloads/*.flac)
+				mv $i ~/Music
+				;;
+			~/Downloads/*.it)
+				mv $i ~/Music
+				;;
+			~/Downloads/*.ult)
+				mv $i ~/Music
+				;;
+			~/Downloads/*.it)
+				mv $i ~/Music
+				;;
+			~/Downloads/*.ogx)
+				mv $i ~/Music
+				;;
+
+			~/Downloads/*.mjpeg)
+				mv $i ~/Videos
+				;;
+			~/Downloads/*.nsv)
+				mv $i ~/Videos
+				;;
+			~/Downloads/*.wmv)
+				mv $i ~/Videos
+				;;
+			~/Downloads/*.ogm)
+				mv $i ~/Videos
+				;;
+			~/Downloads/*.anime[1-9j])
+				mv $i ~/Videos
+				;;
+			~/Downloads/*.webm)
+				mv $i ~/Videos
+				;;
+			~/Downloads/*.rvx)
+				mv $i ~/Videos
+				;;
+			~/Downloads/*.m4u)
+				mv $i ~/Videos
+				;;
+			~/Downloads/*.vivo)
+				mv $i ~/Videos
+				;;
+			~/Downloads/*.m4v)
+				mv $i ~/Videos
+				;;
+			~/Downloads/*.mp4)
+				mv $i ~/Videos
+				;;
+
+			\
+				*) ;;
+
+			esac
+		fi
+	done
+	sleep 5
 done
-sleep 5
-done
- 
