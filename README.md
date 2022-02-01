@@ -32,3 +32,11 @@ A shell script to automatically organize files in your Downloads repository ( fo
    </pre>
   </li>
  </ol>
+ <ul>
+    <li>
+       to execute the script in the background :
+   <pre> 
+   ./cool_dwn &
+   </pre>
+  </li>
+ </ul>
