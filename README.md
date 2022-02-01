@@ -1,4 +1,4 @@
-# cool_dwn
+# <u>cool dwn</u>
 A shell script to automatically organize files in your Downloads repository ( for linux users)
 
 <h3>how to use : </h3>

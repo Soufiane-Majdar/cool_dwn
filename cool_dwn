@@ -215,5 +215,5 @@ while true; do
 			esac
 		fi
 	done
-	sleep 60
+	sleep 30
 done
